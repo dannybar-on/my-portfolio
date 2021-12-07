@@ -47,7 +47,7 @@ function openModal(id) {
     $('.portfolio-modal h2').text(project.name);
     $('.modal-body .img-fluid').attr("src", `img/portfolio/${id}.png`);
     $('.modal-body p').text(project.desc);
-    $('.date').text(`Published Date: ${project.publishAt.toLocaleDateString('en-US', options)}`);
+    $('.date').text(`Published Date: ${new Date(project.publishAt).toLocaleDateString('en-US', options)}`);
     $('.modal-body a').attr("href", `https://dannybar-on.github.io/${id}/`);
     $('.modal-body a').text(project.name);
   }
