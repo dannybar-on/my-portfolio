@@ -4,6 +4,7 @@ $(document).ready(onInit)
 
 function onInit() {
     renderProjects();
+    $('.contact').click(() => openCanvas())
     $('.submit-mail').click(() => {
         var email = $('.email-add').val();
         var subject = $('.email-subject').val();
